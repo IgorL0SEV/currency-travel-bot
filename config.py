@@ -90,6 +90,9 @@ def load_settings(env_file: str | Path | None = None) -> Settings:
 
     provider = normalize_provider(os.getenv("CURRENCY_PROVIDER"))
     api_key = (os.getenv("CURRENCY_API_KEY") or "").strip()
+    if api_key.upper().startswith(("ВАШ_", "YOUR_")) or "ВАШ_КЛЮЧ" in api_key.upper():
+        # В .env.example лежит плейсхолдер; не отправляем его как настоящий ключ.
+        api_key = ""
 
     if provider == PROVIDER_EXCHANGERATE and not api_key:
         # Не падаем сразу: демо и open_er_api должны работать без ключа.

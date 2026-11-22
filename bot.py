@@ -58,9 +58,9 @@ class ConversationStates:
         self._lock = threading.Lock()
         self._data: dict[int, dict] = {}
 
-    def set(self, chat_id: int, step: str, **data) -> None:
+    def set(self, chat_id: int, step_name: str, **data) -> None:
         with self._lock:
-            payload = {"step": step}
+            payload = {"step": step_name}
             payload.update({key: value for key, value in data.items() if key != "step"})
             self._data[int(chat_id)] = payload
 

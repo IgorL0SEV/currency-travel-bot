@@ -152,7 +152,7 @@ currency-travel-bot/
 ├── config.py         # чтение .env
 ├── demo.py           # живая проверка без Telegram
 ├── run.cmd           # запуск в один клик
-├── tests/            # 80 тестов без сети
+├── tests/            # 92 теста без сети
 ├── reference/        # справка по API курсов
 ├── requirements.txt
 ├── .env.example

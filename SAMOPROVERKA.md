@@ -189,7 +189,7 @@ HTTP-сессия подменяется фейком с заранее зада
 
 | Проверка | Результат |
 |---|---|
-| `python -m unittest discover -s tests -v` | ✅ 80 тестов, `OK` |
+| `python -m unittest discover -s tests -v` | ✅ 92 теста, `OK` |
 | `python demo.py` с живым API | ✅ курс получен, поездка и расходы посчитаны |
 | Бот собирается без запуска polling | ✅ 10 обработчиков сообщений, 1 callback |
 | Команды `/start`, `/newtrip`, `/switch`, `/balance`, `/history`, `/setrate` | ✅ зарегистрированы |
