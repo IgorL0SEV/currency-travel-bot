@@ -30,7 +30,7 @@ Telegram-бот «мини-кошелёк путешественника»: по
 | 18 | Проверка чистого запуска и отсутствия секретов в git | ✅ |
 | 19 | Публикация репозитория `currency-travel-bot` на GitHub | ✅ [репозиторий](https://github.com/IgorL0SEV/currency-travel-bot) |
 | 20 | Живая проверка: exchangerate.host и токен Telegram | ✅ |
-| 21 | Проверка сценария в чате Telegram (`/start`, `/newtrip`) | ⏳ за пользователем |
+| 21 | Проверка сценария в чате Telegram (`/start`, `/newtrip`) | ✅ скриншоты в `screenshots/` |
 
 ## Предусловия
 
@@ -74,6 +74,7 @@ python bot.py
 | Секретов нет в git | `git ls-files` без `.env`, `venv/`, `data/` |
 | Живой курс exchangerate.host | `1 CNY = 12,214113 RUB`, резерв не использован |
 | Токен Telegram | `getMe` отвечает, имя бота не публикуется |
+| Сценарий в чате | 5 скриншотов в `screenshots/`: поездка, расход, история, статус |
 | Тесты | 92 теста, `OK` за 1,85 с |
 
 ## Риски и заметки

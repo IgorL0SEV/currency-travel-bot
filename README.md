@@ -154,6 +154,7 @@ currency-travel-bot/
 ├── run.cmd           # запуск в один клик
 ├── tests/            # 92 теста без сети
 ├── reference/        # справка по API курсов
+├── screenshots/      # скриншоты рабочего бота (шапка обрезана)
 ├── requirements.txt
 ├── .env.example
 └── README.md
@@ -186,6 +187,22 @@ currency-travel-bot/
 Остаток: 256,99 CNY = 3 138,90 RUB
 Итого: 70,50 CNY = 861,10 RUB
 ```
+
+## Живая проверка в Telegram
+
+Скриншоты рабочего бота. Верхняя панель с именем аккаунта обрезана.
+
+| Создание поездки | Расход и баланс |
+|---|---|
+| ![Создание поездки Беларусь → Франция](screenshots/01-create-trip-belarus-france.png) | ![Расход 50 CNY](screenshots/03-expense-china.png) |
+
+| История расходов | Статус и лимит |
+|---|---|
+| ![История расходов](screenshots/04-history-china.png) | ![Статус и лимит](screenshots/02-status-limit.png) |
+
+После двух поездок и одного расхода:
+
+![Статус после двух поездок](screenshots/05-status-two-trips.png)
 
 ## Ограничения
 
